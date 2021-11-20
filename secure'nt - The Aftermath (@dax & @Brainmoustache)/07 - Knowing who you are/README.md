@@ -46,7 +46,7 @@ export AWS_SESSION_TOKEN='IQoJb3JpZ2luX2VjEDoaCXVzLWVhc3QtMSJHMEUCIQDSQDaZWJIXl9
 1. And, the flag is in the caller identity / the name of the assumed role.
 
 ```console
-$ aws sts get-caller-identity | tee | grep HF
+$ aws sts get-caller-identity
 {
     "UserId": "AROASECYGINVT2H3NVXL2:CognitoIdentityCredentials",
     "Account": "146213847915",
