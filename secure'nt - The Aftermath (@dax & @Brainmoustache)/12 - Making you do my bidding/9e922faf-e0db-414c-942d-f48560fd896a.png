@@ -1,0 +1,152 @@
+import json
+import os
+import shutil
+import uuid
+from traceback import format_tb as traceback_format_tb
+
+import boto3
+import requests
+from PIL import Image, ImageDraw, ImageFont
+
+IN_DIR = "/tmp/input"
+OUT_DIR = "/tmp/output"
+OUT_WATERMAKED_DIR = "waiting-for-approval"
+WATERMARK = "secure'nt"
+FLAG11 = os.environ["FLAG11"]
+OUTPUT_BUCKET = os.environ["OUTPUT_BUCKET"]
+
+s3 = boto3.client("s3")
+
+
+def make_response(status_code, data):
+    return {"statusCode": status_code, "body": json.dumps(data), "headers": {"FLAG11": FLAG11}}
+
+
+def apply_watermark(input_image_path, output_image_path, text):
+
+    #                          ...----....
+    #                      ..-:"''         ''"-..
+    #                   .-'                      '-.
+    #                 .'              .     .       '.
+    #               .'   .          .    .      .    .''.
+    #             .'  .    .       .   .   .     .   . ..:.
+    #           .' .   . .  .       .   .   ..  .   . ....::.
+    #          ..   .   .      .  .    .     .  ..  . ....:IA.
+    #         .:  .   .    .    .  .  .    .. .  .. .. ....:IA.
+    #        .: .   .   ..   .    .     . . .. . ... ....:.:VHA.
+    #        '..  .  .. .   .       .  . .. . .. . .....:.::IHHB.
+    #       .:. .  . .  . .   .  .  . . . ...:.:... .......:HIHMM.
+    #      .:.... .   . ."::"'.. .   .  . .:.:.:II;,. .. ..:IHIMMA
+    #      ':.:..  ..::IHHHHHI::. . .  ...:.::::.,,,. . ....VIMMHM
+    #     .:::I. .AHHHHHHHHHHAI::. .:...,:IIHHHHHHMMMHHL:. . VMMMM
+    #    .:.:V.:IVHHHHHHHMHMHHH::..:" .:HIHHHHHHHHHHHHHMHHA. .VMMM.
+    #    :..V.:IVHHHHHMMHHHHHHHB... . .:VPHHMHHHMMHHHHHHHHHAI.:VMMI
+    #    ::V..:VIHHHHHHMMMHHHHHH. .   .I":IIMHHMMHHHHHHHHHHHAPI:WMM
+    #    ::". .:.HHHHHHHHMMHHHHHI.  . .:..I:MHMMHHHHHHHHHMHV:':H:WM
+    #    :: . :.::IIHHHHHHMMHHHHV  .ABA.:.:IMHMHMMMHMHHHHV:'. .IHWW
+    #    '.  ..:..:.:IHHHHHMMHV" .AVMHMA.:.'VHMMMMHHHHHV:' .  :IHWV
+    #     :.  .:...:".:.:TPP"   .AVMMHMMA.:. "VMMHHHP.:... .. :IVAI
+    #    .:.   '... .:"'   .   ..HMMMHMMMA::. ."VHHI:::....  .:IHW'
+    #    ...  .  . ..:IIPPIH: ..HMMMI.MMMV:I:.  .:ILLH:.. ...:I:IM
+    #  : .   .'"' .:.V". .. .  :HMMM:IMMMI::I. ..:HHIIPPHI::'.P:HM.
+    #  :.  .  .  .. ..:.. .    :AMMM IMMMM..:...:IV":T::I::.".:IHIMA
+    #  'V:.. .. . .. .  .  .   'VMMV..VMMV :....:V:.:..:....::IHHHMH
+    #    "IHH:.II:.. .:. .  . . . " :HB"" . . ..PI:.::.:::..:IHHMMV"
+    #     :IP""HHII:.  .  .    . . .'V:. . . ..:IH:.:.::IHIHHMMMMM"
+    #     :V:. VIMA:I..  .     .  . .. . .  .:.I:I:..:IHHHHMMHHMMM
+    #     :"VI:.VWMA::. .:      .   .. .:. ..:.I::.:IVHHHMMMHMMMMI
+    #     :."VIIHHMMA:.  .   .   .:  .:.. . .:.II:I:AMMMMMMHMMMMMI
+    #     :..VIHIHMMMI...::.,:.,:!"I:!"I!"I!"V:AI:VAMMMMMMHMMMMMM'
+    #     ':.:HIHIMHHA:"!!"I.:AXXXVVXXXXXXXA:."HPHIMMMMHHMHMMMMMV
+    #       V:H:I:MA:W'I :AXXXIXII:IIIISSSSSSXXA.I.VMMMHMHMMMMMM
+    #         'I::IVA ASSSSXSSSSBBSBMBSSSSSSBBMMMBS.VVMMHIMM'"'
+    #          I:: VPAIMSSSSSSSSSBSSSMMBSSSBBMMMMXXI:MMHIMMI
+    #         .I::. "H:XIIXBBMMMMMMMMMMMMMMMMMBXIXXMMPHIIMM'
+    #         :::I.  ':XSSXXIIIIXSSBMBSSXXXIIIXXSMMAMI:.IMM
+    #         :::I:.  .VSSSSSISISISSSBII:ISSSSBMMB:MI:..:MM
+    #         ::.I:.  ':"SSSSSSSISISSXIIXSSSSBMMB:AHI:..MMM.
+    #         ::.I:. . ..:"BBSSSSSSSSSSSSBBBMMMB:AHHI::.HMMI
+    #         :..::.  . ..::":BBBBBSSBBBMMMB:MMMMHHII::IHHMI
+    #         ':.I:... ....:IHHHHHMMMMMMMMMMMMMMMHHIIIIHMMV"
+    #           "V:. ..:...:.IHHHMMMMMMMMMMMMMMMMHHHMHHMHP'
+    #            ':. .:::.:.::III::IHHHHMMMMMHMHMMHHHHM"
+    #              "::....::.:::..:..::IIIIIHHHHMMMHHMV"
+    #                "::.::.. .. .  ...:::IIHHMMMMHMV"
+    #                  "V::... . .I::IHHMMV"'
+    #                    '"VHVHHHAHHHHMMV:"'
+    #            ______________________________________
+    #   ________|                                      |_______
+    #   \       |                FLAG12                |      /
+    #    \      |  HF-Ytxpe6bwgnhOa1bIDjQzuImp9Qe86Hk9 |     /
+    #    /      |______________________________________|     \
+    #   /__________)                                (_________\
+
+    try:
+        photo = Image.open(input_image_path)
+
+        w, h = photo.size
+        drawing = ImageDraw.Draw(photo)
+        font = ImageFont.truetype("font.ttf", 40)
+
+        text = "© " + text + " "
+        text_w, text_h = drawing.textsize(text, font)
+
+        pos = w - text_w - 15, (h - text_h) - 20
+
+        c_text = Image.new("RGB", (text_w, (text_h)), color="#000000")
+        drawing = ImageDraw.Draw(c_text)
+
+        drawing.text((0, 0), text, fill="#ffffff", font=font)
+        c_text.putalpha(100)
+
+        photo.paste(c_text, pos, c_text)
+        photo.save(output_image_path)
+
+    except:
+        raise ApplyWatermarkException
+
+
+class ApplyWatermarkException(Exception):
+    pass
+
+
+def safe_mkdir(dir):
+    try:
+        os.mkdir(dir)
+    except FileExistsError:
+        pass
+
+
+def handler(event, _):
+    url = json.loads(event["body"])["url"]
+    schema = url.split("://")
+
+    try:
+        if schema[0] == "file":
+            downloaded_image = open(schema[1], "rb")
+        else:
+            downloaded_image = requests.get(url, stream=True)
+
+    except Exception as e:
+        tb = traceback_format_tb(e.__traceback__)
+        return make_response(400, ({"error": str(e), "traceback": tb}))
+
+    safe_mkdir(IN_DIR)
+    safe_mkdir(OUT_DIR)
+
+    try:
+        image_name = str(uuid.uuid4()) + ".png"
+        with open("{}/{}".format(IN_DIR, image_name), "wb") as out_file:
+            if isinstance(downloaded_image, requests.models.Response):
+                out_file.write(downloaded_image.content)
+            else:
+                shutil.copyfileobj(downloaded_image, out_file)
+
+        apply_watermark("{}/{}".format(IN_DIR, image_name), "{}/{}".format(OUT_DIR, image_name), WATERMARK)
+
+        s3.upload_file("{}/{}".format(OUT_DIR, image_name), OUTPUT_BUCKET, "{}/{}".format(OUT_WATERMAKED_DIR, image_name))
+        return make_response(201, {"uploaded_image": "{}/{}".format(OUT_WATERMAKED_DIR, image_name)})
+
+    except ApplyWatermarkException:
+        s3.upload_file("{}/{}".format(IN_DIR, image_name), OUTPUT_BUCKET, "{}/{}".format(OUT_WATERMAKED_DIR, image_name))
+        return make_response(201, {"uploaded_image": "{}/{}".format(OUT_WATERMAKED_DIR, image_name)})
