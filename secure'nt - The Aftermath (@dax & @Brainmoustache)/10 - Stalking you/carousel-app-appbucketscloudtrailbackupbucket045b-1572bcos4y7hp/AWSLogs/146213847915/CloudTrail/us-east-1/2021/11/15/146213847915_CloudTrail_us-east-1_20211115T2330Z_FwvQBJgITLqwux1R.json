@@ -1,0 +1,2185 @@
+{
+    "Records": [
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAII3KTDHF5MHBUEOA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:33Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "UpdateAccount",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "updateAccountInput": {
+                    "patchOperations": [
+                        {
+                            "path": "/cloudwatchRoleArn",
+                            "value": "arn:aws:iam::146213847915:role/carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ",
+                            "op": "replace"
+                        }
+                    ]
+                },
+                "template": false
+            },
+            "responseElements": {
+                "cloudwatchRoleArn": "arn:aws:iam::146213847915:role/carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ",
+                "throttleSettings": {
+                    "rateLimit": 10000.0,
+                    "burstLimit": 5000
+                },
+                "apiKeyVersion": "4",
+                "features": [
+                    "UsagePlans"
+                ],
+                "accountUpdate": {
+                    "template": false
+                },
+                "self": {
+                    "template": false
+                }
+            },
+            "requestID": "ee93de26-b564-4ee2-bcd2-ce29018da3e2",
+            "eventID": "71bb8465-fef7-4ca1-8c88-811fba49560d",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:36Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "PutIntegration",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "resourceId": "x4jk7w",
+                "httpMethod": "POST",
+                "putIntegrationInput": {
+                    "httpMethod": "POST",
+                    "type": "AWS_PROXY",
+                    "requestParameters": {},
+                    "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:146213847915:function:carousel-app-WatermarkingApiWatermarkFunction25DB3-V4KLpzwBjOka/invocations",
+                    "requestTemplates": {}
+                },
+                "restApiId": "3c8y72vp6f",
+                "template": false
+            },
+            "responseElements": {
+                "type": "AWS_PROXY",
+                "timeoutInMillis": 29000,
+                "httpMethod": "POST",
+                "integrationDelete": {
+                    "restApiId": "3c8y72vp6f",
+                    "httpMethod": "POST",
+                    "resourceId": "x4jk7w",
+                    "template": false
+                },
+                "requestParameters": {},
+                "cacheKeyParameters": [],
+                "integrationresponsePut": {
+                    "httpMethod": "POST",
+                    "resourceId": "x4jk7w",
+                    "restApiId": "3c8y72vp6f",
+                    "template": true
+                },
+                "requestTemplates": {},
+                "passthroughBehavior": "WHEN_NO_MATCH",
+                "cacheNamespace": "x4jk7w",
+                "integrationUpdate": {
+                    "restApiId": "3c8y72vp6f",
+                    "resourceId": "x4jk7w",
+                    "httpMethod": "POST",
+                    "template": false
+                },
+                "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:146213847915:function:carousel-app-WatermarkingApiWatermarkFunction25DB3-V4KLpzwBjOka/invocations",
+                "self": {
+                    "restApiId": "3c8y72vp6f",
+                    "httpMethod": "POST",
+                    "resourceId": "x4jk7w",
+                    "template": false
+                }
+            },
+            "requestID": "5c5b7400-1d6e-4a8e-bf58-9d63ce5e324d",
+            "eventID": "f6b5a580-c1e4-49a5-aeb3-13a861fb4597",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIBOLS3IQD2MAGJWA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:43Z",
+            "eventSource": "lambda.amazonaws.com",
+            "eventName": "CreateFunction20150331",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "functionName": "carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G",
+                "runtime": "python3.8",
+                "role": "arn:aws:iam::146213847915:role/carousel-app-MonitorMonitorApiApiEndpointsFunction-UPS3W3RXGMA0",
+                "handler": "main.handler",
+                "code": {
+                    "s3Bucket": "cdktoolkit-stagingbucket-v07mau7pk87y",
+                    "s3Key": "assets/48a11a0d5656dac09f4798ab86a3da61328d477dbce06dd454fb8abdecf267d6.zip"
+                },
+                "timeout": 15,
+                "publish": false,
+                "environment": {},
+                "tags": {
+                    "aws:cloudformation:stack-name": "carousel-app",
+                    "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:146213847915:stack/carousel-app/f28cbc70-466a-11ec-b264-12cfc1373ccf",
+                    "aws:cloudformation:logical-id": "MonitorMonitorApiApiEndpointsFunctionF8058A04"
+                },
+                "fileSystemConfigs": [],
+                "architectures": [
+                    "x86_64"
+                ]
+            },
+            "responseElements": {
+                "functionName": "carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G",
+                "functionArn": "arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G",
+                "runtime": "python3.8",
+                "role": "arn:aws:iam::146213847915:role/carousel-app-MonitorMonitorApiApiEndpointsFunction-UPS3W3RXGMA0",
+                "handler": "main.handler",
+                "codeSize": 17894528,
+                "description": "",
+                "timeout": 15,
+                "memorySize": 128,
+                "lastModified": "2021-11-15T23:26:42.810+0000",
+                "codeSha256": "09bHIVJN5C3gVeuluLPgAAKTUKJ7qAIX37IyvhSO+Hg=",
+                "version": "$LATEST",
+                "environment": {},
+                "tracingConfig": {
+                    "mode": "PassThrough"
+                },
+                "revisionId": "c63216d8-cda8-4012-8aac-cd3baf427011",
+                "state": "Active",
+                "lastUpdateStatus": "Successful",
+                "packageType": "Zip",
+                "architectures": [
+                    "x86_64"
+                ]
+            },
+            "requestID": "5b5f74b5-bc41-4816-b1f1-8ace10cf9bda",
+            "eventID": "a8ee6afe-c4ec-468b-961c-ae3d740f793b",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:35Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "PutMethod",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "restApiId": "3c8y72vp6f",
+                "putMethodInput": {
+                    "requestModels": {
+                        "application/json": "carousWaterYqQC9zoiEX4l"
+                    },
+                    "apiKeyRequired": false,
+                    "authorizationType": "AWS_IAM",
+                    "requestParameters": {},
+                    "requestValidatorId": "9rva5s"
+                },
+                "httpMethod": "POST",
+                "resourceId": "x4jk7w",
+                "template": false
+            },
+            "responseElements": {
+                "requestModels": {
+                    "application/json": "carousWaterYqQC9zoiEX4l"
+                },
+                "httpMethod": "POST",
+                "apiKeyRequired": false,
+                "methodDelete": {
+                    "resourceId": "x4jk7w",
+                    "httpMethod": "POST",
+                    "restApiId": "3c8y72vp6f",
+                    "template": false
+                },
+                "requestParameters": {},
+                "methodresponsePut": {
+                    "restApiId": "3c8y72vp6f",
+                    "httpMethod": "POST",
+                    "resourceId": "x4jk7w",
+                    "template": true
+                },
+                "methodUpdate": {
+                    "httpMethod": "POST",
+                    "resourceId": "x4jk7w",
+                    "restApiId": "3c8y72vp6f",
+                    "template": false
+                },
+                "authorizationType": "AWS_IAM",
+                "integrationPut": {
+                    "resourceId": "x4jk7w",
+                    "httpMethod": "POST",
+                    "restApiId": "3c8y72vp6f",
+                    "template": false
+                },
+                "requestValidatorId": "9rva5s",
+                "self": {
+                    "resourceId": "x4jk7w",
+                    "httpMethod": "POST",
+                    "restApiId": "3c8y72vp6f",
+                    "template": false,
+                    "name": "POST",
+                    "title": "POST"
+                }
+            },
+            "requestID": "ee1424dc-0015-40af-adaa-cb2a700a06b0",
+            "eventID": "06fcc159-312b-4e95-9cea-b2b1674e71cd",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIOIHUSYSILIGSILQ",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "lambda.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:42Z",
+            "eventSource": "kms.amazonaws.com",
+            "eventName": "CreateGrant",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "lambda.amazonaws.com",
+            "userAgent": "lambda.amazonaws.com",
+            "requestParameters": {
+                "retiringPrincipal": "arn:aws:sts::146213847915:assumed-role/carousel-app-MonitorMonitorApiApiEndpointsFunction-UPS3W3RXGMA0/carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G",
+                "operations": [
+                    "Decrypt",
+                    "RetireGrant"
+                ],
+                "granteePrincipal": "arn:aws:sts::146213847915:assumed-role/carousel-app-MonitorMonitorApiApiEndpointsFunction-UPS3W3RXGMA0/carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G",
+                "constraints": {
+                    "encryptionContextEquals": {
+                        "aws:lambda:FunctionArn": "arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G"
+                    }
+                },
+                "keyId": "arn:aws:kms:us-east-1:146213847915:key/1311350a-67c4-41ae-b9e9-7df562a3f3d0"
+            },
+            "responseElements": {
+                "grantId": "280a19a9d55e83232aaafd96088ad78935f9fb7079968c6f23e59bb748ad7e8c"
+            },
+            "requestID": "95c990e7-fc85-44e4-903b-a210528cbda5",
+            "eventID": "24821cd2-b06e-461d-a233-5f1e60a89e3b",
+            "readOnly": false,
+            "resources": [
+                {
+                    "accountId": "146213847915",
+                    "type": "AWS::KMS::Key",
+                    "ARN": "arn:aws:kms:us-east-1:146213847915:key/1311350a-67c4-41ae-b9e9-7df562a3f3d0"
+                }
+            ],
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:43Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "CreateDeployment",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "restApiId": "3c8y72vp6f",
+                "createDeploymentInput": {
+                    "description": "Automatically created by the RestApi construct"
+                },
+                "template": false
+            },
+            "responseElements": {
+                "id": "3ql689",
+                "createdDate": "Nov 15, 2021 11:26:43 PM",
+                "description": "Automatically created by the RestApi construct",
+                "deploymentUpdate": {
+                    "restApiId": "3c8y72vp6f",
+                    "deploymentId": "3ql689",
+                    "template": false
+                },
+                "deploymentStages": {
+                    "deploymentId": "3ql689",
+                    "restApiId": "3c8y72vp6f",
+                    "template": false,
+                    "templateSkipList": [
+                        "position"
+                    ]
+                },
+                "deploymentDelete": {
+                    "deploymentId": "3ql689",
+                    "restApiId": "3c8y72vp6f",
+                    "template": false
+                },
+                "self": {
+                    "deploymentId": "3ql689",
+                    "restApiId": "3c8y72vp6f",
+                    "template": false
+                }
+            },
+            "requestID": "575fc8af-bbb1-4dd0-a322-f492ac92d49a",
+            "eventID": "dbb85bdf-d858-4452-afbc-02702c8b5e7d",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:51Z",
+            "eventSource": "lambda.amazonaws.com",
+            "eventName": "AddPermission20150331v2",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "functionName": "arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G",
+                "statementId": "carousel-app-MonitorMonitorApiApiGatewayRestApiproxyANYApiPermissionTestcarouselappMon-G46WHVPO3E4G",
+                "action": "lambda:InvokeFunction",
+                "principal": "apigateway.amazonaws.com",
+                "sourceArn": "arn:aws:execute-api:us-east-1:146213847915:0lye3isgi8/test-invoke-stage/*/*"
+            },
+            "responseElements": {
+                "statement": "{\"Sid\":\"carousel-app-MonitorMonitorApiApiGatewayRestApiproxyANYApiPermissionTestcarouselappMon-G46WHVPO3E4G\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"apigateway.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:execute-api:us-east-1:146213847915:0lye3isgi8/test-invoke-stage/*/*\"}}}"
+            },
+            "requestID": "7c656ba2-9ea0-485b-9633-d63f15c54451",
+            "eventID": "7a4d1253-ce44-443b-9b3e-0d40353ec27a",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVQ5AAQJVW5:BackplaneAssumeRoleSession",
+                "arn": "arn:aws:sts::146213847915:assumed-role/carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ/BackplaneAssumeRoleSession",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIASECYGINVQSLXAPES",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVQ5AAQJVW5",
+                        "arn": "arn:aws:iam::146213847915:role/carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ",
+                        "accountId": "146213847915",
+                        "userName": "carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:26:33Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "apigateway.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:33Z",
+            "eventSource": "logs.amazonaws.com",
+            "eventName": "CreateLogStream",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "apigateway.amazonaws.com",
+            "userAgent": "apigateway.amazonaws.com",
+            "requestParameters": {
+                "logGroupName": "/aws/apigateway/welcome",
+                "logStreamName": "2021-11-15_23-26-33"
+            },
+            "responseElements": null,
+            "requestID": "1d36117d-6092-4e44-8bb3-984cef4ae653",
+            "eventID": "7154dcb2-419c-46aa-9ca2-de74ea0bda1d",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "apiVersion": "20140328",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:35Z",
+            "eventSource": "lambda.amazonaws.com",
+            "eventName": "AddPermission20150331v2",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "functionName": "arn:aws:lambda:us-east-1:146213847915:function:carousel-app-WatermarkingApiWatermarkFunction25DB3-V4KLpzwBjOka",
+                "statementId": "carousel-app-WatermarkingApiwatermarkPOSTApiPermissionTestcarouselappWatermarkingApi79-1NYUVROVHMYES",
+                "action": "lambda:InvokeFunction",
+                "principal": "apigateway.amazonaws.com",
+                "sourceArn": "arn:aws:execute-api:us-east-1:146213847915:3c8y72vp6f/test-invoke-stage/POST/watermark"
+            },
+            "responseElements": {
+                "statement": "{\"Sid\":\"carousel-app-WatermarkingApiwatermarkPOSTApiPermissionTestcarouselappWatermarkingApi79-1NYUVROVHMYES\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"apigateway.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:us-east-1:146213847915:function:carousel-app-WatermarkingApiWatermarkFunction25DB3-V4KLpzwBjOka\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:execute-api:us-east-1:146213847915:3c8y72vp6f/test-invoke-stage/POST/watermark\"}}}"
+            },
+            "requestID": "2304f341-5f21-4114-b707-5809da969e87",
+            "eventID": "4a423f69-013f-4ab1-8cf2-b2ec9c7e51f4",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVQ5AAQJVW5:BackplaneAssumeRoleSession",
+                "arn": "arn:aws:sts::146213847915:assumed-role/carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ/BackplaneAssumeRoleSession",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIASECYGINVQSLXAPES",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVQ5AAQJVW5",
+                        "arn": "arn:aws:iam::146213847915:role/carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ",
+                        "accountId": "146213847915",
+                        "userName": "carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:26:33Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "apigateway.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:33Z",
+            "eventSource": "logs.amazonaws.com",
+            "eventName": "CreateLogGroup",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "apigateway.amazonaws.com",
+            "userAgent": "apigateway.amazonaws.com",
+            "errorCode": "ResourceAlreadyExistsException",
+            "errorMessage": "The specified log group already exists",
+            "requestParameters": {
+                "logGroupName": "/aws/apigateway/welcome"
+            },
+            "responseElements": null,
+            "requestID": "9932db39-b034-4eb7-b0f5-2f405a51f7bf",
+            "eventID": "00f0bda0-9277-4484-b99f-9814a6cc2a1a",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "apiVersion": "20140328",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVQ5AAQJVW5:BackplaneAssumeRoleSession",
+                "arn": "arn:aws:sts::146213847915:assumed-role/carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ/BackplaneAssumeRoleSession",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIASECYGINVT7KX77GC",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVQ5AAQJVW5",
+                        "arn": "arn:aws:iam::146213847915:role/carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ",
+                        "accountId": "146213847915",
+                        "userName": "carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:26:51Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "apigateway.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:51Z",
+            "eventSource": "logs.amazonaws.com",
+            "eventName": "CreateLogGroup",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "apigateway.amazonaws.com",
+            "userAgent": "apigateway.amazonaws.com",
+            "requestParameters": {
+                "logGroupName": "API-Gateway-Execution-Logs_3c8y72vp6f/api"
+            },
+            "responseElements": null,
+            "requestID": "5bc5164c-7558-4082-b39a-8dbc82a23be9",
+            "eventID": "2f7e8640-651c-4070-b783-8e762c503787",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "apiVersion": "20140328",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:52Z",
+            "eventSource": "lambda.amazonaws.com",
+            "eventName": "AddPermission20150331v2",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "functionName": "arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G",
+                "statementId": "carousel-app-MonitorMonitorApiApiGatewayRestApiANYApiPermissionTestcarouselappMonitorM-5GTDF5D13HAZ",
+                "action": "lambda:InvokeFunction",
+                "principal": "apigateway.amazonaws.com",
+                "sourceArn": "arn:aws:execute-api:us-east-1:146213847915:0lye3isgi8/test-invoke-stage/*/"
+            },
+            "responseElements": {
+                "statement": "{\"Sid\":\"carousel-app-MonitorMonitorApiApiGatewayRestApiANYApiPermissionTestcarouselappMonitorM-5GTDF5D13HAZ\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"apigateway.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:execute-api:us-east-1:146213847915:0lye3isgi8/test-invoke-stage/*/\"}}}"
+            },
+            "requestID": "425e063f-88f2-4641-85ad-07171f279d70",
+            "eventID": "311e432d-65f5-40e1-b80b-0ed455beb4cb",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:52Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "PutMethod",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "restApiId": "0lye3isgi8",
+                "putMethodInput": {
+                    "requestModels": {},
+                    "apiKeyRequired": false,
+                    "authorizerId": "00vq4u",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "requestParameters": {},
+                    "authorizationScopes": [
+                        "openid"
+                    ]
+                },
+                "httpMethod": "ANY",
+                "resourceId": "2mkzm5j3u2",
+                "template": false
+            },
+            "responseElements": {
+                "requestModels": {},
+                "httpMethod": "ANY",
+                "apiKeyRequired": false,
+                "authorizerId": "00vq4u",
+                "methodDelete": {
+                    "resourceId": "2mkzm5j3u2",
+                    "httpMethod": "ANY",
+                    "restApiId": "0lye3isgi8",
+                    "template": false
+                },
+                "requestParameters": {},
+                "methodresponsePut": {
+                    "restApiId": "0lye3isgi8",
+                    "httpMethod": "ANY",
+                    "resourceId": "2mkzm5j3u2",
+                    "template": true
+                },
+                "methodUpdate": {
+                    "httpMethod": "ANY",
+                    "resourceId": "2mkzm5j3u2",
+                    "restApiId": "0lye3isgi8",
+                    "template": false
+                },
+                "authorizationType": "COGNITO_USER_POOLS",
+                "integrationPut": {
+                    "resourceId": "2mkzm5j3u2",
+                    "httpMethod": "ANY",
+                    "restApiId": "0lye3isgi8",
+                    "template": false
+                },
+                "authorizationScopes": [
+                    "openid"
+                ],
+                "self": {
+                    "resourceId": "2mkzm5j3u2",
+                    "httpMethod": "ANY",
+                    "restApiId": "0lye3isgi8",
+                    "template": false,
+                    "name": "ANY",
+                    "title": "ANY"
+                }
+            },
+            "requestID": "12cfd53c-ff32-48de-82a1-ab212ed1cb7e",
+            "eventID": "f9c46160-917a-41b5-bdb3-1570d1f25794",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:51Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "PutMethod",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "restApiId": "0lye3isgi8",
+                "putMethodInput": {
+                    "requestModels": {},
+                    "apiKeyRequired": false,
+                    "authorizerId": "00vq4u",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "requestParameters": {},
+                    "authorizationScopes": [
+                        "openid"
+                    ]
+                },
+                "httpMethod": "ANY",
+                "resourceId": "ba77xc",
+                "template": false
+            },
+            "responseElements": {
+                "requestModels": {},
+                "httpMethod": "ANY",
+                "apiKeyRequired": false,
+                "authorizerId": "00vq4u",
+                "methodDelete": {
+                    "resourceId": "ba77xc",
+                    "httpMethod": "ANY",
+                    "restApiId": "0lye3isgi8",
+                    "template": false
+                },
+                "requestParameters": {},
+                "methodresponsePut": {
+                    "restApiId": "0lye3isgi8",
+                    "httpMethod": "ANY",
+                    "resourceId": "ba77xc",
+                    "template": true
+                },
+                "methodUpdate": {
+                    "httpMethod": "ANY",
+                    "resourceId": "ba77xc",
+                    "restApiId": "0lye3isgi8",
+                    "template": false
+                },
+                "authorizationType": "COGNITO_USER_POOLS",
+                "integrationPut": {
+                    "resourceId": "ba77xc",
+                    "httpMethod": "ANY",
+                    "restApiId": "0lye3isgi8",
+                    "template": false
+                },
+                "authorizationScopes": [
+                    "openid"
+                ],
+                "self": {
+                    "resourceId": "ba77xc",
+                    "httpMethod": "ANY",
+                    "restApiId": "0lye3isgi8",
+                    "template": false,
+                    "name": "ANY",
+                    "title": "ANY"
+                }
+            },
+            "requestID": "0ca5ec92-e6ba-406a-9f3d-515f146e4a07",
+            "eventID": "ddf9d394-6a95-47e7-aa77-e0e655e2496f",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:51Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "PutIntegration",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "resourceId": "ba77xc",
+                "httpMethod": "ANY",
+                "putIntegrationInput": {
+                    "httpMethod": "POST",
+                    "type": "AWS_PROXY",
+                    "requestParameters": {},
+                    "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G/invocations",
+                    "requestTemplates": {}
+                },
+                "restApiId": "0lye3isgi8",
+                "template": false
+            },
+            "responseElements": {
+                "type": "AWS_PROXY",
+                "timeoutInMillis": 29000,
+                "httpMethod": "POST",
+                "integrationDelete": {
+                    "restApiId": "0lye3isgi8",
+                    "httpMethod": "ANY",
+                    "resourceId": "ba77xc",
+                    "template": false
+                },
+                "requestParameters": {},
+                "cacheKeyParameters": [],
+                "integrationresponsePut": {
+                    "httpMethod": "ANY",
+                    "resourceId": "ba77xc",
+                    "restApiId": "0lye3isgi8",
+                    "template": true
+                },
+                "requestTemplates": {},
+                "passthroughBehavior": "WHEN_NO_MATCH",
+                "cacheNamespace": "ba77xc",
+                "integrationUpdate": {
+                    "restApiId": "0lye3isgi8",
+                    "resourceId": "ba77xc",
+                    "httpMethod": "ANY",
+                    "template": false
+                },
+                "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G/invocations",
+                "self": {
+                    "restApiId": "0lye3isgi8",
+                    "httpMethod": "ANY",
+                    "resourceId": "ba77xc",
+                    "template": false
+                }
+            },
+            "requestID": "42e435e1-eee2-4674-ae79-1f08ac23b33f",
+            "eventID": "ccc87e6a-2d3d-4922-b037-eb2d1545f374",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:52Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "PutIntegration",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "resourceId": "2mkzm5j3u2",
+                "httpMethod": "ANY",
+                "putIntegrationInput": {
+                    "httpMethod": "POST",
+                    "type": "AWS_PROXY",
+                    "requestParameters": {},
+                    "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G/invocations",
+                    "requestTemplates": {}
+                },
+                "restApiId": "0lye3isgi8",
+                "template": false
+            },
+            "responseElements": {
+                "type": "AWS_PROXY",
+                "timeoutInMillis": 29000,
+                "httpMethod": "POST",
+                "integrationDelete": {
+                    "restApiId": "0lye3isgi8",
+                    "httpMethod": "ANY",
+                    "resourceId": "2mkzm5j3u2",
+                    "template": false
+                },
+                "requestParameters": {},
+                "cacheKeyParameters": [],
+                "integrationresponsePut": {
+                    "httpMethod": "ANY",
+                    "resourceId": "2mkzm5j3u2",
+                    "restApiId": "0lye3isgi8",
+                    "template": true
+                },
+                "requestTemplates": {},
+                "passthroughBehavior": "WHEN_NO_MATCH",
+                "cacheNamespace": "2mkzm5j3u2",
+                "integrationUpdate": {
+                    "restApiId": "0lye3isgi8",
+                    "resourceId": "2mkzm5j3u2",
+                    "httpMethod": "ANY",
+                    "template": false
+                },
+                "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G/invocations",
+                "self": {
+                    "restApiId": "0lye3isgi8",
+                    "httpMethod": "ANY",
+                    "resourceId": "2mkzm5j3u2",
+                    "template": false
+                }
+            },
+            "requestID": "8fc4bd6b-f7ef-4845-aa49-e591b96e1be7",
+            "eventID": "5bbaea30-0732-45cc-add4-18abdd5575e0",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIQ4TDREFCYWQOTFA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:51Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "UpdateStage",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "updateStageInput": {
+                    "patchOperations": [
+                        {
+                            "path": "/deploymentId",
+                            "value": "3ql689",
+                            "op": "replace"
+                        },
+                        {
+                            "path": "/*/*/logging/loglevel",
+                            "value": "ERROR",
+                            "op": "replace"
+                        }
+                    ]
+                },
+                "restApiId": "3c8y72vp6f",
+                "stageName": "api",
+                "template": false
+            },
+            "responseElements": {
+                "stageUpdate": {
+                    "restApiId": "3c8y72vp6f",
+                    "stageName": "api",
+                    "template": false
+                },
+                "stageName": "api",
+                "createdDate": "Nov 15, 2021 11:26:51 PM",
+                "cacheClusterStatus": "NOT_AVAILABLE",
+                "tracingEnabled": false,
+                "methodSettings": {
+                    "*/*": {
+                        "dataTraceEnabled": false,
+                        "throttlingRateLimit": 10000.0,
+                        "cacheTtlInSeconds": 300,
+                        "cachingEnabled": false,
+                        "requireAuthorizationForCacheControl": true,
+                        "metricsEnabled": false,
+                        "loggingLevel": "ERROR",
+                        "unauthorizedCacheControlHeaderStrategy": "SUCCEED_WITH_RESPONSE_HEADER",
+                        "throttlingBurstLimit": 5000,
+                        "cacheDataEncrypted": false
+                    }
+                },
+                "deploymentId": "3ql689",
+                "cacheClusterEnabled": false,
+                "tags": {
+                    "aws:cloudformation:stack-name": "carousel-app",
+                    "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:146213847915:stack/carousel-app/f28cbc70-466a-11ec-b264-12cfc1373ccf",
+                    "aws:cloudformation:logical-id": "WatermarkingApiDeploymentStageapi0C79974B"
+                },
+                "lastUpdatedDate": "Nov 15, 2021 11:26:51 PM",
+                "stageFlushAuthorizerCache": {
+                    "stageName": "api",
+                    "restApiId": "3c8y72vp6f",
+                    "template": false
+                },
+                "stageDelete": {
+                    "restApiId": "3c8y72vp6f",
+                    "stageName": "api",
+                    "template": false
+                },
+                "self": {
+                    "restApiId": "3c8y72vp6f",
+                    "stageName": "api",
+                    "template": false
+                }
+            },
+            "requestID": "74792fdf-77ff-4917-8b55-93a35bcdea1f",
+            "eventID": "14c78c29-6e04-4510-abd8-9da776820b9c",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIQ4TDREFCYWQOTFA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:51Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "CreateStage",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "restApiId": "3c8y72vp6f",
+                "createStageInput": {
+                    "deploymentId": "3ql689",
+                    "cacheClusterEnabled": false,
+                    "tracingEnabled": false,
+                    "stageName": "api",
+                    "tags": {
+                        "aws:cloudformation:stack-name": "carousel-app",
+                        "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:146213847915:stack/carousel-app/f28cbc70-466a-11ec-b264-12cfc1373ccf",
+                        "aws:cloudformation:logical-id": "WatermarkingApiDeploymentStageapi0C79974B"
+                    }
+                },
+                "template": false
+            },
+            "responseElements": {
+                "stageUpdate": {
+                    "restApiId": "3c8y72vp6f",
+                    "stageName": "api",
+                    "template": false
+                },
+                "stageName": "api",
+                "createdDate": "Nov 15, 2021 11:26:51 PM",
+                "cacheClusterStatus": "NOT_AVAILABLE",
+                "tracingEnabled": false,
+                "methodSettings": {},
+                "deploymentId": "3ql689",
+                "cacheClusterEnabled": false,
+                "tags": {
+                    "aws:cloudformation:stack-name": "carousel-app",
+                    "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:146213847915:stack/carousel-app/f28cbc70-466a-11ec-b264-12cfc1373ccf",
+                    "aws:cloudformation:logical-id": "WatermarkingApiDeploymentStageapi0C79974B"
+                },
+                "lastUpdatedDate": "Nov 15, 2021 11:26:51 PM",
+                "stageFlushAuthorizerCache": {
+                    "stageName": "api",
+                    "restApiId": "3c8y72vp6f",
+                    "template": false
+                },
+                "stageDelete": {
+                    "restApiId": "3c8y72vp6f",
+                    "stageName": "api",
+                    "template": false
+                },
+                "self": {
+                    "restApiId": "3c8y72vp6f",
+                    "stageName": "api",
+                    "template": false
+                }
+            },
+            "requestID": "9c325ba5-5d67-4358-b930-db5eee698242",
+            "eventID": "2e39a3a9-4172-42b3-b637-a5816e3a6807",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:58Z",
+            "eventSource": "lambda.amazonaws.com",
+            "eventName": "AddPermission20150331v2",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "functionName": "arn:aws:lambda:us-east-1:146213847915:function:carousel-app-WatermarkingApiWatermarkFunction25DB3-V4KLpzwBjOka",
+                "statementId": "carousel-app-WatermarkingApiwatermarkPOSTApiPermissioncarouselappWatermarkingApi79D0C9-1G68QJ7OS9J1T",
+                "action": "lambda:InvokeFunction",
+                "principal": "apigateway.amazonaws.com",
+                "sourceArn": "arn:aws:execute-api:us-east-1:146213847915:3c8y72vp6f/api/POST/watermark"
+            },
+            "responseElements": {
+                "statement": "{\"Sid\":\"carousel-app-WatermarkingApiwatermarkPOSTApiPermissioncarouselappWatermarkingApi79D0C9-1G68QJ7OS9J1T\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"apigateway.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:us-east-1:146213847915:function:carousel-app-WatermarkingApiWatermarkFunction25DB3-V4KLpzwBjOka\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:execute-api:us-east-1:146213847915:3c8y72vp6f/api/POST/watermark\"}}}"
+            },
+            "requestID": "a70c49e4-c116-49cf-98bc-98cb769c46bd",
+            "eventID": "3b098b20-8738-42f8-9a71-25b4574514e3",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:26:59Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "CreateDeployment",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "restApiId": "0lye3isgi8",
+                "createDeploymentInput": {
+                    "description": "Automatically created by the RestApi construct"
+                },
+                "template": false
+            },
+            "responseElements": {
+                "id": "chnbq3",
+                "createdDate": "Nov 15, 2021 11:26:59 PM",
+                "description": "Automatically created by the RestApi construct",
+                "deploymentUpdate": {
+                    "restApiId": "0lye3isgi8",
+                    "deploymentId": "chnbq3",
+                    "template": false
+                },
+                "deploymentStages": {
+                    "deploymentId": "chnbq3",
+                    "restApiId": "0lye3isgi8",
+                    "template": false,
+                    "templateSkipList": [
+                        "position"
+                    ]
+                },
+                "deploymentDelete": {
+                    "deploymentId": "chnbq3",
+                    "restApiId": "0lye3isgi8",
+                    "template": false
+                },
+                "self": {
+                    "deploymentId": "chnbq3",
+                    "restApiId": "0lye3isgi8",
+                    "template": false
+                }
+            },
+            "requestID": "3d46fd8e-bb05-4bb3-a08d-904768df8342",
+            "eventID": "954bdd22-f5e1-4b48-92c5-9b09b5503b74",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVRMAP5M7GZ:CLOUDWATCH_LOGS_DELIVERY_SESSION",
+                "arn": "arn:aws:sts::146213847915:assumed-role/carousel-app-LoggerCloudTrailLogsRoleC33DF151-1CSKRY7RXIYT6/CLOUDWATCH_LOGS_DELIVERY_SESSION",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIASECYGINV3YY4QNWR",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVRMAP5M7GZ",
+                        "arn": "arn:aws:iam::146213847915:role/carousel-app-LoggerCloudTrailLogsRoleC33DF151-1CSKRY7RXIYT6",
+                        "accountId": "146213847915",
+                        "userName": "carousel-app-LoggerCloudTrailLogsRoleC33DF151-1CSKRY7RXIYT6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:27:07Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudtrail.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:27:07Z",
+            "eventSource": "logs.amazonaws.com",
+            "eventName": "CreateLogStream",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudtrail.amazonaws.com",
+            "userAgent": "cloudtrail.amazonaws.com",
+            "requestParameters": {
+                "logGroupName": "carousel-app-LoggerTrailLogGroup1378C956-e2plvIKdDhg1",
+                "logStreamName": "146213847915_CloudTrail_us-east-1_2"
+            },
+            "responseElements": null,
+            "requestID": "0cdaf544-b5b7-4001-a28e-787b238c2053",
+            "eventID": "9a9d25b2-16d3-420d-9a7d-5756dea46af6",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "apiVersion": "20140328",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAJL5GOSAB7UCDSKTA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:27:11Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "UpdateStage",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "updateStageInput": {
+                    "patchOperations": [
+                        {
+                            "path": "/deploymentId",
+                            "value": "chnbq3",
+                            "op": "replace"
+                        },
+                        {
+                            "path": "/accessLogSettings/destinationArn",
+                            "value": "arn:aws:logs:us-east-1:146213847915:log-group:carousel-app-MonitorMonitorApiApiGatewayRestApiLogGroupBBCB3812-XGRbYknwvTPk",
+                            "op": "replace"
+                        },
+                        {
+                            "path": "/variables/dashboard_url",
+                            "value": "*",
+                            "op": "replace"
+                        },
+                        {
+                            "path": "/*/*/logging/loglevel",
+                            "value": "ERROR",
+                            "op": "replace"
+                        },
+                        {
+                            "path": "/accessLogSettings/format",
+                            "value": "{\"requestId\":\"$context.requestId\",\"ip\":\"$context.identity.sourceIp\",\"user\":\"$context.identity.user\",\"caller\":\"$context.identity.caller\",\"requestTime\":\"$context.requestTime\",\"httpMethod\":\"$context.httpMethod\",\"resourcePath\":\"$context.resourcePath\",\"status\":\"$context.status\",\"protocol\":\"$context.protocol\",\"responseLength\":\"$context.responseLength\"}",
+                            "op": "replace"
+                        }
+                    ]
+                },
+                "restApiId": "0lye3isgi8",
+                "stageName": "api",
+                "template": false
+            },
+            "responseElements": {
+                "stageUpdate": {
+                    "restApiId": "0lye3isgi8",
+                    "stageName": "api",
+                    "template": false
+                },
+                "stageName": "api",
+                "createdDate": "Nov 15, 2021 11:27:11 PM",
+                "cacheClusterStatus": "NOT_AVAILABLE",
+                "tracingEnabled": false,
+                "methodSettings": {
+                    "*/*": {
+                        "dataTraceEnabled": false,
+                        "throttlingRateLimit": 10000.0,
+                        "cacheTtlInSeconds": 300,
+                        "cachingEnabled": false,
+                        "requireAuthorizationForCacheControl": true,
+                        "metricsEnabled": false,
+                        "loggingLevel": "ERROR",
+                        "unauthorizedCacheControlHeaderStrategy": "SUCCEED_WITH_RESPONSE_HEADER",
+                        "throttlingBurstLimit": 5000,
+                        "cacheDataEncrypted": false
+                    }
+                },
+                "variables": {
+                    "dashboard_url": "*"
+                },
+                "deploymentId": "chnbq3",
+                "cacheClusterEnabled": false,
+                "accessLogSettings": {
+                    "format": "{\"requestId\":\"$context.requestId\",\"ip\":\"$context.identity.sourceIp\",\"user\":\"$context.identity.user\",\"caller\":\"$context.identity.caller\",\"requestTime\":\"$context.requestTime\",\"httpMethod\":\"$context.httpMethod\",\"resourcePath\":\"$context.resourcePath\",\"status\":\"$context.status\",\"protocol\":\"$context.protocol\",\"responseLength\":\"$context.responseLength\"}",
+                    "destinationArn": "arn:aws:logs:us-east-1:146213847915:log-group:carousel-app-MonitorMonitorApiApiGatewayRestApiLogGroupBBCB3812-XGRbYknwvTPk"
+                },
+                "tags": {
+                    "aws:cloudformation:stack-name": "carousel-app",
+                    "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:146213847915:stack/carousel-app/f28cbc70-466a-11ec-b264-12cfc1373ccf",
+                    "aws:cloudformation:logical-id": "MonitorMonitorApiApiGatewayRestApiDeploymentStageapi3E2BD567"
+                },
+                "lastUpdatedDate": "Nov 15, 2021 11:27:11 PM",
+                "stageFlushAuthorizerCache": {
+                    "stageName": "api",
+                    "restApiId": "0lye3isgi8",
+                    "template": false
+                },
+                "stageDelete": {
+                    "restApiId": "0lye3isgi8",
+                    "stageName": "api",
+                    "template": false
+                },
+                "self": {
+                    "restApiId": "0lye3isgi8",
+                    "stageName": "api",
+                    "template": false
+                }
+            },
+            "requestID": "d7fbc777-d252-4882-85cf-8d4bb3c2ab5f",
+            "eventID": "b3601600-646d-4ad2-89eb-b22ae1195dca",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAJL5GOSAB7UCDSKTA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:27:11Z",
+            "eventSource": "apigateway.amazonaws.com",
+            "eventName": "CreateStage",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "restApiId": "0lye3isgi8",
+                "createStageInput": {
+                    "deploymentId": "chnbq3",
+                    "cacheClusterEnabled": false,
+                    "tracingEnabled": false,
+                    "stageName": "api",
+                    "tags": {
+                        "aws:cloudformation:stack-name": "carousel-app",
+                        "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:146213847915:stack/carousel-app/f28cbc70-466a-11ec-b264-12cfc1373ccf",
+                        "aws:cloudformation:logical-id": "MonitorMonitorApiApiGatewayRestApiDeploymentStageapi3E2BD567"
+                    }
+                },
+                "template": false
+            },
+            "responseElements": {
+                "stageUpdate": {
+                    "restApiId": "0lye3isgi8",
+                    "stageName": "api",
+                    "template": false
+                },
+                "stageName": "api",
+                "createdDate": "Nov 15, 2021 11:27:11 PM",
+                "cacheClusterStatus": "NOT_AVAILABLE",
+                "tracingEnabled": false,
+                "methodSettings": {},
+                "deploymentId": "chnbq3",
+                "cacheClusterEnabled": false,
+                "tags": {
+                    "aws:cloudformation:stack-name": "carousel-app",
+                    "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:146213847915:stack/carousel-app/f28cbc70-466a-11ec-b264-12cfc1373ccf",
+                    "aws:cloudformation:logical-id": "MonitorMonitorApiApiGatewayRestApiDeploymentStageapi3E2BD567"
+                },
+                "lastUpdatedDate": "Nov 15, 2021 11:27:11 PM",
+                "stageFlushAuthorizerCache": {
+                    "stageName": "api",
+                    "restApiId": "0lye3isgi8",
+                    "template": false
+                },
+                "stageDelete": {
+                    "restApiId": "0lye3isgi8",
+                    "stageName": "api",
+                    "template": false
+                },
+                "self": {
+                    "restApiId": "0lye3isgi8",
+                    "stageName": "api",
+                    "template": false
+                }
+            },
+            "requestID": "b5c9830a-9f6f-4939-9a43-cbc5a5c31d1e",
+            "eventID": "cc015049-d5f4-4c73-b1b7-eb45049b9373",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:27:18Z",
+            "eventSource": "lambda.amazonaws.com",
+            "eventName": "AddPermission20150331v2",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "functionName": "arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G",
+                "statementId": "carousel-app-MonitorMonitorApiApiGatewayRestApiproxyANYApiPermissioncarouselappMonitor-18E6U98LFOVA2",
+                "action": "lambda:InvokeFunction",
+                "principal": "apigateway.amazonaws.com",
+                "sourceArn": "arn:aws:execute-api:us-east-1:146213847915:0lye3isgi8/api/*/*"
+            },
+            "responseElements": {
+                "statement": "{\"Sid\":\"carousel-app-MonitorMonitorApiApiGatewayRestApiproxyANYApiPermissioncarouselappMonitor-18E6U98LFOVA2\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"apigateway.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:execute-api:us-east-1:146213847915:0lye3isgi8/api/*/*\"}}}"
+            },
+            "requestID": "7f7b09e6-6c4c-471a-b7d5-a320f331e55f",
+            "eventID": "b5b09701-3773-485b-8a49-a3881466407c",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAI56FQ4SYDWHTBPMA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:27:00Z",
+            "eventSource": "codebuild.amazonaws.com",
+            "eventName": "CreateProject",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "name": "arn:aws:codebuild:us-east-1:146213847915:project/carousel-app-infra-code-build-project",
+                "encryptionKey": "HIDDEN_DUE_TO_SECURITY_REASONS",
+                "artifacts": {
+                    "type": "NO_ARTIFACTS"
+                },
+                "source": {
+                    "type": "GITHUB",
+                    "location": "https://github.com/daxnbrain/hf2021-webapp.git",
+                    "reportBuildStatus": true
+                },
+                "sourceVersion": "main",
+                "timeoutInMinutes": 60,
+                "tags": "HIDDEN_DUE_TO_SECURITY_REASONS",
+                "queuedTimeoutInMinutes": 480,
+                "serviceRole": "arn:aws:iam::146213847915:role/carousel-app-CiCdCodeBuildProjectRole1FC3BF58-63B6MLC5SMMY",
+                "environment": {
+                    "environmentVariables": [
+                        {
+                            "type": "HIDDEN_DUE_TO_SECURITY_REASONS",
+                            "value": "HIDDEN_DUE_TO_SECURITY_REASONS",
+                            "name": "HIDDEN_DUE_TO_SECURITY_REASONS"
+                        }
+                    ],
+                    "privilegedMode": false,
+                    "imagePullCredentialsType": "CODEBUILD",
+                    "type": "LINUX_CONTAINER",
+                    "image": "aws/codebuild/standard:5.0",
+                    "computeType": "BUILD_GENERAL1_SMALL"
+                }
+            },
+            "responseElements": {
+                "project": {
+                    "artifacts": {
+                        "type": "NO_ARTIFACTS"
+                    },
+                    "name": "carousel-app-infra-code-build-project",
+                    "environment": {
+                        "environmentVariables": [
+                            {
+                                "type": "HIDDEN_DUE_TO_SECURITY_REASONS",
+                                "value": "HIDDEN_DUE_TO_SECURITY_REASONS",
+                                "name": "HIDDEN_DUE_TO_SECURITY_REASONS"
+                            }
+                        ],
+                        "privilegedMode": false,
+                        "imagePullCredentialsType": "CODEBUILD",
+                        "type": "LINUX_CONTAINER",
+                        "image": "aws/codebuild/standard:5.0",
+                        "computeType": "BUILD_GENERAL1_SMALL"
+                    },
+                    "timeoutInMinutes": 60,
+                    "encryptionKey": "HIDDEN_DUE_TO_SECURITY_REASONS",
+                    "arn": "arn:aws:codebuild:us-east-1:146213847915:project/carousel-app-infra-code-build-project",
+                    "tags": "HIDDEN_DUE_TO_SECURITY_REASONS",
+                    "serviceRole": "arn:aws:iam::146213847915:role/carousel-app-CiCdCodeBuildProjectRole1FC3BF58-63B6MLC5SMMY",
+                    "queuedTimeoutInMinutes": 480,
+                    "lastModified": "Nov 15, 2021 11:27:00 PM",
+                    "source": {
+                        "insecureSsl": false,
+                        "type": "GITHUB",
+                        "location": "https://github.com/daxnbrain/hf2021-webapp.git",
+                        "reportBuildStatus": true
+                    },
+                    "sourceVersion": "main",
+                    "created": "Nov 15, 2021 11:27:00 PM",
+                    "cache": {
+                        "type": "NO_CACHE"
+                    },
+                    "badge": {
+                        "badgeEnabled": false
+                    }
+                }
+            },
+            "requestID": "18c67f85-8bbe-476a-9da8-53d02c559aad",
+            "eventID": "f53f61b4-be0f-4333-8429-e096b318111c",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVQ5AAQJVW5:BackplaneAssumeRoleSession",
+                "arn": "arn:aws:sts::146213847915:assumed-role/carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ/BackplaneAssumeRoleSession",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIASECYGINVXTER6PAV",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVQ5AAQJVW5",
+                        "arn": "arn:aws:iam::146213847915:role/carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ",
+                        "accountId": "146213847915",
+                        "userName": "carousel-app-WatermarkingApiCloudWatchRole71653692-14Z38SVYHZBQ"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:27:11Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "apigateway.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:27:11Z",
+            "eventSource": "logs.amazonaws.com",
+            "eventName": "CreateLogGroup",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "apigateway.amazonaws.com",
+            "userAgent": "apigateway.amazonaws.com",
+            "requestParameters": {
+                "logGroupName": "API-Gateway-Execution-Logs_0lye3isgi8/api"
+            },
+            "responseElements": null,
+            "requestID": "c5395ca2-73a7-4b46-9d97-2d1a3d64048a",
+            "eventID": "4bc48de6-2628-4e4b-9f20-e6d43e9ae28c",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "apiVersion": "20140328",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:27:19Z",
+            "eventSource": "lambda.amazonaws.com",
+            "eventName": "AddPermission20150331v2",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "functionName": "arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G",
+                "statementId": "carousel-app-MonitorMonitorApiApiGatewayRestApiANYApiPermissioncarouselappMonitorMonit-NGD1FS44YV83",
+                "action": "lambda:InvokeFunction",
+                "principal": "apigateway.amazonaws.com",
+                "sourceArn": "arn:aws:execute-api:us-east-1:146213847915:0lye3isgi8/api/*/"
+            },
+            "responseElements": {
+                "statement": "{\"Sid\":\"carousel-app-MonitorMonitorApiApiGatewayRestApiANYApiPermissioncarouselappMonitorMonit-NGD1FS44YV83\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"apigateway.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:us-east-1:146213847915:function:carousel-app-MonitorMonitorApiApiEndpointsFunction-N9MrMhjn927G\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:execute-api:us-east-1:146213847915:0lye3isgi8/api/*/\"}}}"
+            },
+            "requestID": "038ccbe8-4385-4069-8993-0033ea8d78aa",
+            "eventID": "bcbbfed9-8ba5-469a-b55b-ee4731a5c033",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAIYGW3UQQGBAR37CA",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:29:07Z",
+            "eventSource": "route53.amazonaws.com",
+            "eventName": "ChangeResourceRecordSets",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "hostedZoneId": "Z01961981OEEKVNCMOP19",
+                "changeBatch": {
+                    "changes": [
+                        {
+                            "action": "CREATE",
+                            "resourceRecordSet": {
+                                "name": "securent.daxnbrain.hfctf.ca.",
+                                "type": "CNAME",
+                                "tTL": 1800,
+                                "resourceRecords": [
+                                    {
+                                        "value": "d1j0o8l52cx6fn.cloudfront.net"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "responseElements": {
+                "changeInfo": {
+                    "id": "/change/C05762231BWXA9YQE0W9U",
+                    "status": "PENDING",
+                    "submittedAt": "Nov 15, 2021 11:29:07 PM"
+                }
+            },
+            "additionalEventData": {
+                "Note": "Do not use to reconstruct hosted zone"
+            },
+            "requestID": "9797f9ca-76c3-4fa3-a4a5-73cdbde4ab6d",
+            "eventID": "fd424807-119f-45c6-b164-2461f4142857",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "apiVersion": "2013-04-01",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAJYMUUH7XTR42DORQ",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:29:07Z",
+            "eventSource": "monitoring.amazonaws.com",
+            "eventName": "PutDashboard",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "dashboardName": "DashboardB5E3F5DB-dUdsDt5dRhs0",
+                "dashboardBody": "{\"widgets\":[{\"height\":6,\"width\":6,\"y\":0,\"x\":0,\"type\":\"metric\",\"properties\":{\"metrics\":[[\"AWS/CloudFront\",\"BytesDownloaded\",\"Region\",\"Global\",\"DistributionId\",\"EI4LVJ6KT8BX5\"],[\".\",\"BytesUploaded\",\".\",\".\",\".\",\".\"]],\"view\":\"pie\",\"region\":\"us-east-1\",\"stat\":\"Sum\",\"period\":300,\"stacked\":true,\"setPeriodToTimeRange\":true,\"title\":\"CDN upload/download\"}},{\"height\":6,\"width\":6,\"y\":0,\"x\":6,\"type\":\"metric\",\"properties\":{\"metrics\":[[\"AWS/CloudFront\",\"TotalErrorRate\",\"Region\",\"Global\",\"DistributionId\",\"EI4LVJ6KT8BX5\",{\"id\":\"m1\"}]],\"view\":\"timeSeries\",\"stacked\":false,\"region\":\"us-east-1\",\"stat\":\"Average\",\"period\":300,\"title\":\"CDN error rate\"}},{\"height\":6,\"width\":6,\"y\":0,\"x\":12,\"type\":\"metric\",\"properties\":{\"metrics\":[[\"AWS/CloudFront\",\"4xxErrorRate\",\"Region\",\"Global\",\"DistributionId\",\"EI4LVJ6KT8BX5\"],[\".\",\"5xxErrorRate\",\".\",\".\",\".\",\".\",{\"yAxis\":\"left\"}]],\"view\":\"bar\",\"region\":\"us-east-1\",\"stat\":\"Average\",\"period\":300,\"title\":\"CDN error distribution\"}},{\"height\":6,\"width\":6,\"y\":0,\"x\":18,\"type\":\"metric\",\"properties\":{\"metrics\":[[\"AWS/CloudFront\",\"Requests\",\"Region\",\"Global\",\"DistributionId\",\"EI4LVJ6KT8BX5\"]],\"view\":\"timeSeries\",\"stacked\":false,\"region\":\"us-east-1\",\"stat\":\"Sum\",\"period\":300,\"title\":\"CDN requests\"}},{\"height\":3,\"width\":6,\"y\":6,\"x\":0,\"type\":\"metric\",\"properties\":{\"metrics\":[[\"AWS/Route53\",\"DNSQueries\",\"HostedZoneId\",\"Z01961981OEEKVNCMOP19\"]],\"view\":\"singleValue\",\"stacked\":false,\"region\":\"us-east-1\",\"stat\":\"Sum\",\"period\":86400}},{\"height\":6,\"width\":6,\"y\":6,\"x\":6,\"type\":\"metric\",\"properties\":{\"metrics\":[[\"AWS/ApiGateway\",\"Count\",\"ApiName\",\"watermark-api\"]],\"view\":\"timeSeries\",\"stacked\":false,\"region\":\"us-east-1\",\"title\":\"Watermarking API invocations\",\"period\":300,\"stat\":\"Sum\"}},{\"height\":6,\"width\":6,\"y\":6,\"x\":12,\"type\":\"metric\",\"properties\":{\"metrics\":[[\"AWS/ApiGateway\",\"4XXError\",\"ApiName\",\"watermark-api\",\"Stage\",\"api\"],[\".\",\"5XXError\",\".\",\".\",\".\",\".\"]],\"view\":\"bar\",\"stacked\":true,\"region\":\"us-east-1\",\"setPeriodToTimeRange\":true,\"stat\":\"Sum\",\"period\":300,\"title\":\"Watermarking API error distribution\"}},{\"height\":3,\"width\":6,\"y\":6,\"x\":18,\"type\":\"metric\",\"properties\":{\"view\":\"singleValue\",\"stacked\":false,\"metrics\":[[\"AWS/ApiGateway\",\"Latency\",\"ApiName\",\"watermark-api\"]],\"region\":\"us-east-1\",\"title\":\"Watermarking API latency\"}},{\"height\":3,\"width\":6,\"y\":9,\"x\":18,\"type\":\"metric\",\"properties\":{\"view\":\"singleValue\",\"metrics\":[[\"AWS/ApiGateway\",\"IntegrationLatency\",\"ApiName\",\"watermark-api\"]],\"region\":\"us-east-1\",\"title\":\"Watermarking Lambda latency\"}},{\"type\":\"metric\",\"x\":0,\"y\":9,\"width\":6,\"height\":3,\"properties\":{\"metrics\":[[\"AWS/Cognito\",\"SignInSuccesses\",\"UserPool\",\"us-east-1_perulVONg\",\"UserPoolClient\",\"4inro09ih43ngggceg9rpk4bk5\"]],\"view\":\"singleValue\",\"stacked\":false,\"region\":\"us-east-1\",\"liveData\":false,\"stat\":\"Sum\",\"period\":300,\"title\":\"Monitoring dashboard logins\"}},{\"type\":\"metric\",\"x\":0,\"y\":12,\"width\":6,\"height\":3,\"properties\":{\"metrics\":[[\"AWS/S3\",\"NumberOfObjects\",\"StorageType\",\"AllStorageTypes\",\"BucketName\",\"carousel-app-appbucketswatermarkedimagesbucketfce-1tojqzrov3x1u\"]],\"view\":\"singleValue\",\"stacked\":false,\"region\":\"us-east-1\",\"stat\":\"Sum\",\"period\":86400,\"title\":\"Number of watermarked images\"}},{\"type\":\"metric\",\"x\":6,\"y\":12,\"width\":6,\"height\":3,\"properties\":{\"view\":\"singleValue\",\"metrics\":[[\"AWS/S3\",\"BucketSizeBytes\",\"StorageType\",\"StandardStorage\",\"BucketName\",\"carousel-app-appbucketswatermarkedimagesbucketfce-1tojqzrov3x1u\",{\"period\":86400}]],\"region\":\"us-east-1\",\"title\":\"Size of watermarked images bucket\"}},{\"type\":\"alarm\",\"x\":12,\"y\":12,\"width\":12,\"height\":3,\"properties\":{\"title\":\"Suspect AWS API calls\",\"alarms\":[\"arn:aws:cloudwatch:us-east-1:146213847915:alarm:GetSecret detected\",\"arn:aws:cloudwatch:us-east-1:146213847915:alarm:ListBuckets detected\"]}}]}"
+            },
+            "responseElements": {
+                "dashboardValidationMessages": [
+                    {
+                        "dataPath": "/widgets/0/properties/view",
+                        "message": "The value of \"view\" property is not valid. Should be equal to one of the allowed values: singleValue,timeSeries"
+                    },
+                    {
+                        "dataPath": "/widgets/2/properties/view",
+                        "message": "The value of \"view\" property is not valid. Should be equal to one of the allowed values: singleValue,timeSeries"
+                    },
+                    {
+                        "dataPath": "/widgets/6/properties/view",
+                        "message": "The value of \"view\" property is not valid. Should be equal to one of the allowed values: singleValue,timeSeries"
+                    }
+                ]
+            },
+            "requestID": "18d5560b-516f-4624-bfdc-e169136f73f1",
+            "eventID": "fb41b3b7-e692-4c92-a1cd-595343fe927e",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINVVYCZWEQGT:dax@hfctf.ca",
+                "arn": "arn:aws:sts::146213847915:assumed-role/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6/dax@hfctf.ca",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIAJ3CFJ2JWF4DRV4OQ",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINVVYCZWEQGT",
+                        "arn": "arn:aws:iam::146213847915:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6",
+                        "accountId": "146213847915",
+                        "userName": "AWSReservedSSO_AdministratorAccess_6cf9a51a624404a6"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:22:02Z",
+                        "mfaAuthenticated": "false"
+                    }
+                },
+                "invokedBy": "cloudformation.amazonaws.com"
+            },
+            "eventTime": "2021-11-15T23:29:48Z",
+            "eventSource": "ssm.amazonaws.com",
+            "eventName": "PutParameter",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "cloudformation.amazonaws.com",
+            "userAgent": "cloudformation.amazonaws.com",
+            "requestParameters": {
+                "name": "/carousel-app-infra/stacks",
+                "value": "HIDDEN_DUE_TO_SECURITY_REASONS",
+                "type": "String",
+                "overwrite": false,
+                "tags": [
+                    {
+                        "key": "FLAG10",
+                        "value": "HF-SCkpLLUIrZCZfK67sI7OAYQmDxBargWl"
+                    },
+                    {
+                        "key": "aws:cloudformation:stack-name",
+                        "value": "carousel-app"
+                    },
+                    {
+                        "key": "aws:cloudformation:stack-id",
+                        "value": "arn:aws:cloudformation:us-east-1:146213847915:stack/carousel-app/f28cbc70-466a-11ec-b264-12cfc1373ccf"
+                    },
+                    {
+                        "key": "aws:cloudformation:logical-id",
+                        "value": "EndSignalSSMParameterBABF3D3D"
+                    }
+                ]
+            },
+            "responseElements": {
+                "version": 1,
+                "tier": "Standard"
+            },
+            "requestID": "db8886a6-707d-4fac-a656-44a12ae32c4d",
+            "eventID": "fe0fb0d4-1807-4748-bff4-74bcd787521d",
+            "readOnly": false,
+            "resources": [
+                {
+                    "accountId": "146213847915",
+                    "ARN": "arn:aws:ssm:us-east-1:146213847915:parameter/carousel-app-infra/stacks"
+                }
+            ],
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "principalId": "AROASECYGINV2YPRGFKFS:carousel-app-CustomCDKBucketDeployment8693BB649689-jhDJy8NGqrGh",
+                "arn": "arn:aws:sts::146213847915:assumed-role/carousel-app-CustomCDKBucketDeployment8693BB649689-DW9277DLXKZV/carousel-app-CustomCDKBucketDeployment8693BB649689-jhDJy8NGqrGh",
+                "accountId": "146213847915",
+                "accessKeyId": "ASIASECYGINVSNHQ4ZHG",
+                "sessionContext": {
+                    "sessionIssuer": {
+                        "type": "Role",
+                        "principalId": "AROASECYGINV2YPRGFKFS",
+                        "arn": "arn:aws:iam::146213847915:role/carousel-app-CustomCDKBucketDeployment8693BB649689-DW9277DLXKZV",
+                        "accountId": "146213847915",
+                        "userName": "carousel-app-CustomCDKBucketDeployment8693BB649689-DW9277DLXKZV"
+                    },
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "creationDate": "2021-11-15T23:29:52Z",
+                        "mfaAuthenticated": "false"
+                    }
+                }
+            },
+            "eventTime": "2021-11-15T23:30:00Z",
+            "eventSource": "logs.amazonaws.com",
+            "eventName": "CreateLogStream",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "18.232.119.195",
+            "userAgent": "awslambda-worker/1.0 rusoto/0.47.0 rust/1.56.1 linux",
+            "requestParameters": {
+                "logGroupName": "/aws/lambda/carousel-app-CustomCDKBucketDeployment8693BB649689-jhDJy8NGqrGh",
+                "logStreamName": "2021/11/15/[$LATEST]2cc94938a81a4cab9c56df0dce4d23a6"
+            },
+            "responseElements": null,
+            "requestID": "860d30ab-2a94-4b1a-b3fb-875fa7f33364",
+            "eventID": "eb18ed63-cdbd-4b13-abe0-179411d9f969",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "apiVersion": "20140328",
+            "managementEvent": true,
+            "recipientAccountId": "146213847915",
+            "eventCategory": "Management",
+            "tlsDetails": {
+                "tlsVersion": "TLSv1.2",
+                "cipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+                "clientProvidedHostHeader": "logs.us-east-1.amazonaws.com"
+            }
+        }
+    ]
+}
