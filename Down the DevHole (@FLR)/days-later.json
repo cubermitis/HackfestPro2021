@@ -1,0 +1,100 @@
+{
+    "schemaVersion" : 1,
+    "name" : "28",
+    "tag" : "days-later",
+    "architecture" : "amd64",
+    "fsLayers" : [ {
+      "blobSum" : "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+    }, {
+      "blobSum" : "sha256:5b3fbe9c8577bcd080a9ca8af4cae2c1859950f097901d9117956cdcadd03f36"
+    }, {
+      "blobSum" : "sha256:ac6722b2df2437aaf8faa5a772ebe2e1c411e56e033753c177ef6879c585ae3f"
+    }, {
+      "blobSum" : "sha256:e67b04bbb5ecbef5895a4f63566721c5e7d90e0e878758056a7578513707d406"
+    }, {
+      "blobSum" : "sha256:a651fc93f978e11d73f2922af87b6632662b4f80decdb4fc383d0a20e0b5af64"
+    }, {
+      "blobSum" : "sha256:c419f02b097afd35095f4f516337e6451b6c99bafa048c1b88f2d928d7347cb0"
+    }, {
+      "blobSum" : "sha256:bff112ec5c8ac14b61698d0b93e2b5c55696001ef46da632d63626ca0e814e13"
+    }, {
+      "blobSum" : "sha256:8597bf05ff04463a5ed1f1e8350d3d570bea4d196d745c7c34a667d3dd635f01"
+    }, {
+      "blobSum" : "sha256:17bb0dd32d782b8d7cf0486c748d97c192f70a1203d75e4cc374aec89754e923"
+    }, {
+      "blobSum" : "sha256:ceef0f4c0ef3177aa7d8767450fb926f7fba42c4cc2ccd6d72eb29ff9c868ac2"
+    }, {
+      "blobSum" : "sha256:54ecbf964edf1e71bd790859b6d80f5dd55e7bb40a2be8880a9c0cbeaab09aa9"
+    }, {
+      "blobSum" : "sha256:8d88f1a65abc5ab09cc035eb7c4cc9a1a5970064513ab1de8e18f42bb6865400"
+    }, {
+      "blobSum" : "sha256:b87ea0fbe0c48c8cd5c33e7c543b0ec19b90110ecd72f180ecd5d0892015dffe"
+    }, {
+      "blobSum" : "sha256:8ac70297674fbc170f5a6d9860748923e124be092b87a3f38ddac7c4586b571d"
+    }, {
+      "blobSum" : "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+    }, {
+      "blobSum" : "sha256:ad2fba09ea2bb5f3ff873b4e33e7be0046700b34704702eafb592d91e61d0198"
+    }, {
+      "blobSum" : "sha256:05ddf8675e8ee6e81cd869016e521645dd554b05880b14473622b7ae9ca24dc3"
+    }, {
+      "blobSum" : "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+    }, {
+      "blobSum" : "sha256:50c80dea7190e2b921781425f2466146ca47321bf2eca7578d88e29be2438a68"
+    }, {
+      "blobSum" : "sha256:65d0970da728768fa53697b076ec4a1e8086bf11cd6a5751c8aca5945b3fb7ce"
+    }, {
+      "blobSum" : "sha256:c56368f8b4b04b99b5b0fe3736a76a5f840c83e60f4543ef8a07600dedcefdef"
+    }, {
+      "blobSum" : "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+    }, {
+      "blobSum" : "sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d"
+    } ],
+    "history" : [ {
+      "v1Compatibility" : "{\"created\":\"2021-11-19T20:11:23.9786436Z\",\"docker_version\":\"20.10.11\",\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"alien\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"AWS_IAM_AUTH_VERSION=0.5.2\"],\"Cmd\":[\"/bin/sh\"],\"Image\":\"sha256:ac3dac3281ce041a6b6fa6316b57c9bbe987d2d9ff873c34f2485576b670234f\",\"Volumes\":null,\"WorkingDir\":\"/root\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"container\":\"c341c91f6c0d32a5c405aec5199ea28b1a95ff74b5c664b202026d2217a0fbbd\",\"os\":\"linux\",\"container_config\":{\"Hostname\":\"c341c91f6c0d\",\"Domainname\":\"\",\"User\":\"alien\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"AWS_IAM_AUTH_VERSION=0.5.2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"USER alien\"],\"Image\":\"sha256:ac3dac3281ce041a6b6fa6316b57c9bbe987d2d9ff873c34f2485576b670234f\",\"Volumes\":null,\"WorkingDir\":\"/root\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"id\":\"5865664542c405c61eb5a764f8c51dfba76fe0a5093eb2929e9a0d94d8fb6bc7\",\"parent\":\"86f2208fe85bf925ecedbda0c997d8eee044dd89ad31c846a60db16f446d1eb1\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"86f2208fe85bf925ecedbda0c997d8eee044dd89ad31c846a60db16f446d1eb1\",\"created\":\"2021-11-19T20:11:23.6061459Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c adduser -D alien\"},\"parent\":\"c6524580f59cd11e2d767f7f2b779710613cfe6c6e3cac4e3b1c3c3db17daa07\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"c6524580f59cd11e2d767f7f2b779710613cfe6c6e3cac4e3b1c3c3db17daa07\",\"created\":\"2021-11-19T20:11:22.4138698Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c #(nop) COPY file:040d84f76aa216e4e4ac81c99b0461b61b2e148f4d45f7952a303768f3ae6968 in /root/.profile \"},\"parent\":\"a2bfb8798151656f29229dfdc0c86ff8586e7ae982c30ff8febfc43b7d33a836\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"a2bfb8798151656f29229dfdc0c86ff8586e7ae982c30ff8febfc43b7d33a836\",\"created\":\"2021-11-19T20:11:22.1820609Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c #(nop) COPY file:232a2fa57354b855566da32903c6158e10b4138b9cccaa4473cdf6c92a898f5b in /flag.txt \"},\"parent\":\"3849e52cf9a0f6a288c8427d86db467748925bc5b4cd808e98d45c3ec75589dc\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"3849e52cf9a0f6a288c8427d86db467748925bc5b4cd808e98d45c3ec75589dc\",\"created\":\"2021-11-19T20:11:21.9198487Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c helm repo update\"},\"parent\":\"938a7a17264ab58065441862709c31792d164b3c14b135f9d65c1f064446e4fe\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"938a7a17264ab58065441862709c31792d164b3c14b135f9d65c1f064446e4fe\",\"created\":\"2021-11-19T20:11:20.1629037Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c helm repo add gitlab https://charts.gitlab.io/\"},\"parent\":\"2fe553af5512428bd7e2c2fa5dc212520cd369dffba9f629dabf917655cd5f8f\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"2fe553af5512428bd7e2c2fa5dc212520cd369dffba9f629dabf917655cd5f8f\",\"created\":\"2021-11-19T20:11:18.3250994Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c apk add bash\"},\"parent\":\"e7dcf44b43cc1bb048c0ac383c7c60fdbd038370e894793aa55959c719ee28d3\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"e7dcf44b43cc1bb048c0ac383c7c60fdbd038370e894793aa55959c719ee28d3\",\"created\":\"2021-11-19T20:11:15.9810778Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c git clone https://gitlab.com/gitlab-org/charts/gitlab/\"},\"parent\":\"e13d23c074f6b9f9dd5c2c6ffc597fe7c4bda2cb41ee40f284adb9e9df7eb269\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"e13d23c074f6b9f9dd5c2c6ffc597fe7c4bda2cb41ee40f284adb9e9df7eb269\",\"created\":\"2021-11-19T20:11:07.8639427Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c mv /tmp/eksctl /usr/local/bin\"},\"parent\":\"a4bf60922411e03366d689d5dffa9a7e55a30e4e1ee74daccceb679517c7b7af\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"a4bf60922411e03366d689d5dffa9a7e55a30e4e1ee74daccceb679517c7b7af\",\"created\":\"2021-11-19T20:11:02.7602667Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c curl --silent --location \\\"https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz\\\" | tar xz -C /tmp\"},\"parent\":\"921202318579427a268eeadc796c5e2bf878a34dea5281c81d25c710ab532b90\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"921202318579427a268eeadc796c5e2bf878a34dea5281c81d25c710ab532b90\",\"created\":\"2021-11-19T20:10:55.1521243Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c chmod +x /usr/local/bin/helm\"},\"parent\":\"cdc91336110141644fd00f027d659732671a122a5ba1d814fc9266c02fae8ea4\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"cdc91336110141644fd00f027d659732671a122a5ba1d814fc9266c02fae8ea4\",\"created\":\"2021-11-19T20:10:52.3921683Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c mv linux-amd64/helm /usr/local/bin/helm\"},\"parent\":\"0bf8deb4b9b72ce2532d7027ab2f06e567176a1103824aa1aef9be574d01263b\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"0bf8deb4b9b72ce2532d7027ab2f06e567176a1103824aa1aef9be574d01263b\",\"created\":\"2021-11-19T20:10:49.0653774Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c tar -zxvf helm-v3.7.0-linux-amd64.tar.gz\"},\"parent\":\"9a944b744a8ff8b43616d9895acfd921ac7650b8f9c02569bce92e691ef38df2\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"9a944b744a8ff8b43616d9895acfd921ac7650b8f9c02569bce92e691ef38df2\",\"created\":\"2021-11-19T20:10:45.2270851Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c curl --silent --location https://get.helm.sh/helm-v3.7.0-linux-amd64.tar.gz -o helm-v3.7.0-linux-amd64.tar.gz\"},\"parent\":\"7aa5d2f18c5a9f511654d8d5129f7519bce3154836173511f6e0cc7a2d403ea2\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"7aa5d2f18c5a9f511654d8d5129f7519bce3154836173511f6e0cc7a2d403ea2\",\"created\":\"2021-11-19T20:10:40.6312352Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c #(nop) WORKDIR /root\"},\"parent\":\"86041aa7aff8bf4d6fd0c4e0b33ad71660d7af8a9035513265d62d0f8481210e\",\"throwaway\":true}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"86041aa7aff8bf4d6fd0c4e0b33ad71660d7af8a9035513265d62d0f8481210e\",\"created\":\"2021-11-19T20:10:39.8144731Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c curl --silent --location \\\"https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl\\\" --output /usr/local/bin/kubectl     && chmod +x /usr/local/bin/kubectl\"},\"parent\":\"0a4d623a41d76aec74489660a5a483a51cc18966f4cae9e0809cd74f1dfb0742\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"0a4d623a41d76aec74489660a5a483a51cc18966f4cae9e0809cd74f1dfb0742\",\"created\":\"2021-11-19T20:10:29.1895212Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c curl --silent --location \\\"https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v${AWS_IAM_AUTH_VERSION}/aws-iam-authenticator_${AWS_IAM_AUTH_VERSION}_linux_amd64\\\" --output /usr/local/bin/aws-iam-authenticator     && chmod +x /usr/local/bin/aws-iam-authenticator\"},\"parent\":\"c3377dbf20d2d13eb5e91b80635c097a5351811b4a7d59f60342353e59c6a68f\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"c3377dbf20d2d13eb5e91b80635c097a5351811b4a7d59f60342353e59c6a68f\",\"created\":\"2021-11-19T20:10:20.9061254Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c #(nop)  ENV AWS_IAM_AUTH_VERSION=0.5.2\"},\"parent\":\"8628741549035c0b21fc98b375317e38c20d258fe68f056862812a0d6283d52d\",\"throwaway\":true}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"8628741549035c0b21fc98b375317e38c20d258fe68f056862812a0d6283d52d\",\"created\":\"2021-11-19T20:10:20.1424176Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c apk add --no-cache     curl     alpine-baselayout     busybox     ca-certificates     coreutils     git     libc6-compat     openssh     && true\"},\"parent\":\"5948399888133ad2f848b073216e34032540fa13d028c896b17048666aea8520\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"5948399888133ad2f848b073216e34032540fa13d028c896b17048666aea8520\",\"created\":\"2021-11-19T20:10:15.5155494Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c apk upgrade\"},\"parent\":\"db99f1557fed1a7bebd3d8c8d69e9856284444ac3455883ae893832f034e4c59\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"db99f1557fed1a7bebd3d8c8d69e9856284444ac3455883ae893832f034e4c59\",\"created\":\"2021-11-19T20:10:13.9970022Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c apk update\"},\"parent\":\"47959c32f4c6766bbf55cfef2d6ec5c0f4f2ad817495acb13b6b406808d6e3a3\"}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"47959c32f4c6766bbf55cfef2d6ec5c0f4f2ad817495acb13b6b406808d6e3a3\",\"created\":\"2021-11-12T17:19:45.079013213Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c #(nop)  CMD [\\\"/bin/sh\\\"]\"},\"parent\":\"0a763f1a9788c7a1bc8ebe235e8886a9fa212cbedde3b5cc406a9c96c7174ca0\",\"throwaway\":true}"
+    }, {
+      "v1Compatibility" : "{\"id\":\"0a763f1a9788c7a1bc8ebe235e8886a9fa212cbedde3b5cc406a9c96c7174ca0\",\"created\":\"2021-11-12T17:19:44.795237917Z\",\"Cmd\":{\"container_config\":\"/bin/sh -c #(nop) ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / \"}}"
+    } ]
+  }
