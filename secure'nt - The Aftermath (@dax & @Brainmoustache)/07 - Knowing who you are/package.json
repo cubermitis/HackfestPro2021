@@ -1,0 +1,10 @@
+{
+    "name": "secure-nt",
+    "version": "0.0.1",
+    "main": "index.js",
+    "dependencies": {
+        "aws-sdk": "^2.1033.0",
+        "amazon-cognito-identity-js": "^5.2.3"
+    },
+    "type": "module"
+}
