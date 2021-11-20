@@ -42,7 +42,17 @@ console.log("https://".concat(userPoolDomain, ".auth.")
 // "https://hf2021-securent.auth.us-east-1.amazoncognito.com/login?client_id=4inro09ih43ngggceg9rpk4bk5&response_type=token&scope=openid&redirect_uri=https://securent.daxnbrain.hfctf.ca/"
 ```
 
-This let me to an Amazon Cognito login page that I used to create an account and sign-in. And, from there, the flag was an item on the Kanban Board.
+This let me to an Amazon Cognito login page where I was allowed to register an account and sign-in:
+
+<details>
+
+![Sign-In Page](signin_flow_1.png)
+
+![Sign-Up Page](signin_flow_2.png)
+
+</details>
+
+And, from there, the flag was an item on the Kanban Board.
 
 ![Kanban Board](kanban_board.png)
 
