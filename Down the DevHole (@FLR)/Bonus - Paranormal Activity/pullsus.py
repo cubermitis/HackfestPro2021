@@ -23,7 +23,7 @@ print(manifest)
 def download_file(url):
     local_filename = url.split('/')[-1]
     # NOTE the stream=True parameter below
-    with requests.get(url, stream=True, headers={"authorization": "basic chjpdmf0zv9yzwfkonz0owdzaflcs3c1afvrnetxotbi",}) as r:
+    with requests.get(url, stream=True, headers={"authorization": "Basic cHJpdmF0ZV9yZWFkOnZ0OWdzaFlCS3c1aFVrNEtXOTBi",}) as r:
         r.raise_for_status()
         with open(local_filename, 'wb') as f:
             for chunk in r.iter_content(chunk_size=8192):
