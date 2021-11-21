@@ -60,6 +60,8 @@ Not sure why Powershell doesn't have `base64 -d` like Linux... This forced havin
 $ob=[;$cb=];$ste=$(echo System.Text.Encoding);$ste=$ob+$ste+$cb;...;$b64o=$front+B64_PAYLOAD+$back;$payload=$(Invoke-Expression $b64o);Invoke-Expression $payload
 ```
 
+(EDIT: [@isra17](https://github.com/isra17) pointed out the `powershell -EncodedCommand` command in a comment. Keep that in your toolbox!)
+
 ## Conclusion
 
 The paths that we went down into were most likely more complex than the intended solution. Our lack of knowledge of Windows and most of us not having Windows was probably what stumped us. 
