@@ -1,5 +1,7 @@
 # LvlUp 04 - Labyrinth
 
+**Note:** Past midnight trying to solve this under pressure, this soudntrack was really the vibe: [![Music from "The Labyrinth"](https://img.youtube.com/vi/9eurfJGOOhg/0.jpg)](https://www.youtube.com/watch?v=9eurfJGOOhg).
+
 Using the Alice repo obtained in the access token I obtained in challenge #3, I simply grepped for the flag in the commit history.
 
 ```console
