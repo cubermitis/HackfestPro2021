@@ -18,6 +18,6 @@ Unable to load Public Key
 
 - The server **tls.maxwhite.hfctf.ca** wouldn't connect because it was also using those unknown cipher suites
 
-- We later learned that the the star wars lightsaber reference found in challenge 1 was hinting at Saber key exchange from liboqs
+- We later learned that the star wars lightsaber reference found in challenge 1 was hinting at Saber key exchange from liboqs
 
 - Tools included in [this](https://hub.docker.com/r/openquantumsafe/curl#!) docker image would have been useful to connect to the server. 
