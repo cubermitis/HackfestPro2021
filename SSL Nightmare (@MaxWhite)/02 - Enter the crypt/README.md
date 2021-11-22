@@ -2,7 +2,7 @@
 
 We did not solve this challenge but we found relevant information while doing the first ssl challenge that would've been vital to solving this second one.
 
-- Running openssl to read the certificate files downloaded previously, printed out error messages leading us to believe that the certificates are using a key algorithm that openssl doesn't understand.
+- Running openssl to read the certificate files downloaded previously printed out error messages leading us to believe that the certificates are using a key algorithm that openssl doesn't understand.
 
 ```bash
 [...]
