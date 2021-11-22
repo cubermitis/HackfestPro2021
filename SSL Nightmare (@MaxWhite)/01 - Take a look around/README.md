@@ -8,7 +8,7 @@ Once decompressed, the files were:
 To read and search for potential flags in all the certificate files, we can run the following command: 
 
 ```bash
-openssl x509 -in server.crt -text -noout | grep HF
+$ openssl x509 -in server.crt -text -noout | grep HF
 [...]
 Subject: CN=tls.maxwhite.hfctf.ca,
 O=HF-nJWua9gfNJPN3RFJXQQUwnNFypvi4wUn, 
