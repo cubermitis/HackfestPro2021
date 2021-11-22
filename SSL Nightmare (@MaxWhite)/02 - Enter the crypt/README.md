@@ -5,6 +5,7 @@ We did not solve this challenge but we found relevant information while doing th
 - Running openssl to read the certificate files downloaded previously printed out error messages leading us to believe that the certificates are using a key algorithm that openssl doesn't understand.
 
 ```bash
+$ openssl x509 -in server.crt -text -noout
 [...]
 Subject Public Key Info:
 Public Key Algorithm: 1.3.9999.3.4
