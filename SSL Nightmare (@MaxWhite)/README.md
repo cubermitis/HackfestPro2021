@@ -2,7 +2,8 @@
 
 The challenge link opened up a page with only a background picture. Clicking on the picture, we download a compressed file of ssl certificates.
 Once decompressed, the files were:
-![[Pasted image 20211121222136.png]]
+
+![alt text](certs.png)
 
 To read and search for potential flags in all the certificate files, we can run the following command: 
 
